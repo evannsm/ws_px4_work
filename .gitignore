@@ -1,0 +1,22 @@
+# ROS 2 workspace build artifacts
+build/
+install/
+log/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Acados generated files
+**/acados_generated_files/
+
+# Editor / IDE
+.vscode/
+.claude/
+
+# OS
+.DS_Store
