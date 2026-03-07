@@ -56,3 +56,26 @@ git submodule update --init --recursive
 | Package | Description |
 |---------|-------------|
 | [px4_ros_com](https://github.com/PX4/px4_ros_com) | PX4-ROS 2 bridge (upstream PX4 package) |
+
+### Docker
+
+| Package | Description |
+|---------|-------------|
+| [PX4-ROS2-Docker](https://github.com/evannsm/PX4-ROS2-Docker) | Dockerfile and requirements for the ROS 2 + JAX development container |
+
+---
+
+## Docker workflow
+
+All `make` commands are run from `src/`:
+
+```bash
+cd ws_px4_work/src
+make build       # build the Docker image (once, or after Dockerfile changes)
+make run         # start the container
+make build_ros   # build all ROS 2 packages inside the container
+make attach      # open a shell inside the container
+make stop        # stop the container
+```
+
+The `PX4-ROS2-Docker` submodule must be populated for these to work — use `--recurse-submodules` when cloning (see above).
