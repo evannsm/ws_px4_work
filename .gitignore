@@ -18,5 +18,9 @@ venv/
 .vscode/
 .claude/
 
+# Unmanaged local directories
+data_analysis/
+offboard_cpp/
+
 # OS
 .DS_Store
