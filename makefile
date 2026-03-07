@@ -4,8 +4,9 @@
 #
 # HOW THE DOCKER IMAGE IS BUILT
 # ──────────────────────────────
-# The image (px4_ros2_jazzy) is built from src/docker/Dockerfile with
-# the workspace root (ws_px4_work/) as the build context.  It contains:
+# The image (px4_ros2_jazzy) is built from the PX4-ROS2-Docker submodule
+# (PX4-ROS2-Docker/docker/Dockerfile), using PX4-ROS2-Docker/ as the build
+# context so that COPY docker/... resolves correctly.  It contains:
 #
 #   • ROS 2 Jazzy          — from osrf/ros:jazzy-desktop-full base image
 #   • px4_msgs             — cloned from github.com/evannsm/px4_msgs
@@ -45,9 +46,9 @@ CONTAINER_NAME = px4_ros2
 WS_ROOT        := $(abspath ..)
 
 # ── Docker image ──────────────────────────────────────────────────────────────
-# Build context is ws_px4_work/ so COPY docker/... resolves correctly.
+# Build context is PX4-ROS2-Docker/ so COPY docker/... resolves correctly.
 build:
-	docker build -f docker/Dockerfile .. -t $(IMAGE_NAME)
+	docker build -f PX4-ROS2-Docker/docker/Dockerfile PX4-ROS2-Docker -t $(IMAGE_NAME)
 
 # ── Run container ─────────────────────────────────────────────────────────────
 run:
