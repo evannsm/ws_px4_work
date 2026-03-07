@@ -46,6 +46,6 @@
 [submodule "testing_jacobian"]
 	path = testing_jacobian
 	url = git@github.com:evannsm/jax_cpp_nr_speed_test.git
-[submodule "PX4-ROS2-Docker"]
-	path = PX4-ROS2-Docker
-	url = git@github.com:evannsm/PX4-ROS2-Docker.git
+[submodule "nmpc_acados_px4_cpp"]
+	path = nmpc_acados_px4_cpp
+	url = git@github.com:evannsm/nmpc_acados_px4_cpp.git
