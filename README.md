@@ -1,1 +1,58 @@
-hi
+# ws_px4_work
+
+ROS 2 workspace for quadrotor flight controllers and utilities targeting PX4-based platforms. All packages are included as git submodules.
+
+## Cloning
+
+```bash
+git clone --recurse-submodules git@github.com:evannsm/ws_px4_work.git
+```
+
+If already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+## Submodules
+
+### Controllers (Python)
+
+| Package | Description |
+|---------|-------------|
+| [geometric_px4](https://github.com/evannsm/geometric_px4) | Geometric attitude/position controller |
+| [geometric_px4_flat](https://github.com/evannsm/geometric_px4_flat) | Geometric controller using differential flatness |
+| [geometric_px4_flip](https://github.com/evannsm/geometric_px4_flip) | Geometric controller for aggressive flip maneuvers |
+| [geometric_px4_quat](https://github.com/evannsm/geometric_px4_quat) | Geometric controller with quaternion representation |
+| [newton_raphson_px4](https://github.com/evannsm/newton_raphson_px4) | Newton-Raphson based controller |
+| [nmpc_acados_px4](https://github.com/evannsm/nmpc_acados_px4) | Nonlinear MPC controller using ACADOS |
+
+### Controllers (C++)
+
+| Package | Description |
+|---------|-------------|
+| [geometric_px4_cpp](https://github.com/evannsm/geometric_px4_cpp) | Geometric controller (C++) |
+| [newton_raphson_px4_cpp](https://github.com/evannsm/newton_raphson_px4_cpp) | Newton-Raphson based controller (C++) |
+
+### Platform / Trajectory Utilities
+
+| Package | Description |
+|---------|-------------|
+| [quad_platforms](https://github.com/evannsm/quad_platforms) | Quadrotor platform definitions (Python) |
+| [quad_platforms_cpp](https://github.com/evannsm/quad_platforms_cpp) | Quadrotor platform definitions (C++) |
+| [quad_trajectories](https://github.com/evannsm/quad_trajectories) | Trajectory generators (Python) |
+| [quad_trajectories_cpp](https://github.com/evannsm/quad_trajectories_cpp) | Trajectory generators (C++) |
+
+### Logging / Utilities
+
+| Package | Description |
+|---------|-------------|
+| [ROS2Logger](https://github.com/evannsm/ROS2Logger) | ROS 2 data logger (Python) |
+| [ROS2Logger_cpp](https://github.com/evannsm/ROS2Logger_cpp) | ROS 2 data logger (C++) |
+| [testing_jacobian](https://github.com/evannsm/jax_cpp_nr_speed_test) | JAX vs C++ speed benchmark for Jacobian computations |
+
+### PX4 Interface
+
+| Package | Description |
+|---------|-------------|
+| [px4_ros_com](https://github.com/PX4/px4_ros_com) | PX4-ROS 2 bridge (upstream PX4 package) |
