@@ -47,8 +47,8 @@ git submodule update --init --recursive
 
 | Package | Description |
 |---------|-------------|
-| [ROS2Logger](https://github.com/evannsm/ROS2Logger) | ROS 2 data logger (Python) |
-| [ROS2Logger_cpp](https://github.com/evannsm/ROS2Logger_cpp) | ROS 2 data logger (C++) |
+| [ros2_logger](https://github.com/evannsm/ROS2Logger) | ROS 2 data logger (Python) |
+| [ros2_logger_cpp](https://github.com/evannsm/ROS2Logger_cpp) | ROS 2 data logger (C++) |
 | [testing_jacobian](https://github.com/evannsm/jax_cpp_nr_speed_test) | JAX vs C++ speed benchmark for Jacobian computations |
 
 ### PX4 Interface

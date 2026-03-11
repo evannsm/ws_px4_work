@@ -4,8 +4,8 @@
 [submodule "nmpc_acados_px4"]
 	path = nmpc_acados_px4
 	url = git@github.com:evannsm/nmpc_acados_px4.git
-[submodule "ROS2Logger_cpp"]
-	path = ROS2Logger_cpp
+[submodule "ros2_logger_cpp"]
+	path = ros2_logger_cpp
 	url = git@github.com:evannsm/ROS2Logger_cpp.git
 [submodule "quad_trajectories_cpp"]
 	path = quad_trajectories_cpp
@@ -19,8 +19,8 @@
 [submodule "quad_platforms_cpp"]
 	path = quad_platforms_cpp
 	url = git@github.com:evannsm/quad_platforms_cpp.git
-[submodule "ROS2Logger"]
-	path = ROS2Logger
+[submodule "ros2_logger"]
+	path = ros2_logger
 	url = git@github.com:evannsm/ROS2Logger.git
 [submodule "geometric_px4_quat"]
 	path = geometric_px4_quat
