@@ -21,6 +21,7 @@ venv/
 # Unmanaged local directories
 data_analysis/
 offboard_cpp/
+ff_f8_px4/
 
 # OS
 .DS_Store
